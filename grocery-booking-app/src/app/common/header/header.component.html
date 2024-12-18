@@ -1,0 +1,7 @@
+<mat-toolbar [color]="color">
+    <span>Grocery Booking App</span>
+    <span class="h2-spacer"></span>
+    <h2>Dashboard {{ role }}</h2>
+    <span class="spacer"></span>
+    <mat-slide-toggle [(ngModel)]="isAdmin" (change)="toggleRoute()"></mat-slide-toggle><h3>Admin Portal</h3>
+</mat-toolbar>

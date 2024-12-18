@@ -1,0 +1,30 @@
+<div class="box">
+    <h2 mat-dialog-title>Update Item</h2>
+<div mat-dialog-content>
+  <p>
+    <mat-form-field>
+      <input matInput placeholder="Name" [(ngModel)]="data.name" required>
+    </mat-form-field>
+  </p>
+  <p>
+    <mat-form-field>
+      <input matInput placeholder="Category" [(ngModel)]="data.category" required>
+    </mat-form-field>
+  </p>
+  <p>
+    <mat-form-field>
+      <input matInput placeholder="Price" [(ngModel)]="data.price" required>
+    </mat-form-field>
+  </p>
+  <p>
+    <mat-form-field>
+      <input matInput placeholder="Quantity Available" [(ngModel)]="data.quantity_available" required>
+    </mat-form-field>
+  </p>
+</div>
+<div mat-dialog-actions>
+  <button mat-button [mat-dialog-close]="data" cdkFocusInitial>Update</button>
+  <button mat-button (click)="onNoClick()">Cancel</button>
+</div>
+
+</div>
